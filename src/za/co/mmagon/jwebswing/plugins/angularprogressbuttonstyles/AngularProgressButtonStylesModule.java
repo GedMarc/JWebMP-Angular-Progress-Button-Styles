@@ -10,20 +10,20 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  */
 class AngularProgressButtonStylesModule extends AngularModuleBase
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /*
-     * Constructs a new AngularProgressButtonStylesModule
-     */
-    public AngularProgressButtonStylesModule()
-    {
-        super("angular-progress-button-styles");
-    }
-
-    @Override
-    public String renderFunction()
-    {
-        return null;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	 * Constructs a new AngularProgressButtonStylesModule
+	 */
+	public AngularProgressButtonStylesModule()
+	{
+		super("angular-progress-button-styles");
+	}
+	
+	@Override
+	public String renderFunction()
+	{
+		return null;
+	}
 }

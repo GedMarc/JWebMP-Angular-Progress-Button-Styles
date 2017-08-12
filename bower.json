@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-		"angular-progress-button-styles": "*"
+    "angular-progress-button-styles": "*"
   }
 }
