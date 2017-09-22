@@ -25,19 +25,20 @@ enum AngularProgressButtonStylesReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private AngularProgressButtonStylesReferencePool()
+	AngularProgressButtonStylesReferencePool()
 	{
 	
 	}
+
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private AngularProgressButtonStylesReferencePool(String data)
+	AngularProgressButtonStylesReferencePool(String data)
 	{
-	
+
 	}
 	
-	private AngularProgressButtonStylesReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	AngularProgressButtonStylesReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)
