@@ -29,14 +29,6 @@ enum AngularProgressButtonStylesReferencePool implements ReferencePool
 	{
 	
 	}
-
-	/**
-	 * A new AngularSlimScrollReferencePool with data
-	 */
-	AngularProgressButtonStylesReferencePool(String data)
-	{
-
-	}
 	
 	AngularProgressButtonStylesReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
