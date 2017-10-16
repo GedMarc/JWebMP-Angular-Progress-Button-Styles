@@ -1,7 +1,7 @@
 package za.co.mmagon.jwebswing.plugins.angularprogressbuttonstyles;
 
 import org.junit.jupiter.api.Test;
-import za.co.mmagon.BaseTestClass;
+import za.co.mmagon.jwebswing.BaseTestClass;
 import za.co.mmagon.jwebswing.base.ajax.AjaxCall;
 import za.co.mmagon.jwebswing.base.ajax.AjaxResponse;
 import za.co.mmagon.jwebswing.events.click.ClickAdapter;
