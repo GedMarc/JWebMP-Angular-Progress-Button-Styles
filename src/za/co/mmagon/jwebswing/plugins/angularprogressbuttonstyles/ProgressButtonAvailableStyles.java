@@ -28,7 +28,7 @@ public enum ProgressButtonAvailableStyles
 	 * Any sub data
 	 */
 	private String data;
-	
+
 	/**
 	 * A new ProgressButtonAvailableStyles
 	 */
@@ -36,15 +36,7 @@ public enum ProgressButtonAvailableStyles
 	{
 
 	}
-	
-	/**
-	 * A new ProgressButtonAvailableStyles with data
-	 */
-	ProgressButtonAvailableStyles(String data)
-	{
 
-	}
-	
 	/**
 	 * Returns the name or the data contained within
 	 *
