@@ -1,5 +1,7 @@
 package za.co.mmagon.jwebswing.plugins.angularprogressbuttonstyles;
 
+import za.co.mmagon.jwebswing.utilities.StaticStrings;
+
 /**
  * Defines button appearance. Default value is fill.
  *
@@ -51,7 +53,7 @@ public enum ProgressButtonAvailableStyles
 		}
 		else
 		{
-			return name().toLowerCase().replace('_', '-');
+			return name().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, '-');
 		}
 	}
 }
