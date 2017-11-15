@@ -18,6 +18,7 @@ public class ProgressButtonStyle extends Button
 	/*
 	 * Constructs a new ProgressButtonStyle
 	 */
+	@SuppressWarnings("unchecked")
 	public ProgressButtonStyle(Event eventToPerform)
 	{
 		addEvent(eventToPerform);
