@@ -1,9 +1,26 @@
-package za.co.mmagon.jwebswing.plugins.angularprogressbuttonstyles;
+/*
+ * Copyright (C) 2017 Marc Magon
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
-import za.co.mmagon.jwebswing.base.servlets.enumarations.RequirementsPriority;
-import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
+package com.jwebmp.plugins.angularprogressbuttonstyles;
+
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.base.servlets.enumarations.RequirementsPriority;
+import com.jwebmp.base.servlets.interfaces.ReferencePool;
 
 /**
  * References for angular
@@ -21,15 +38,15 @@ enum AngularProgressButtonStylesReferencePool implements ReferencePool
 	private String data;
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
-	
+
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
 	AngularProgressButtonStylesReferencePool()
 	{
-	
+
 	}
-	
+
 	AngularProgressButtonStylesReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
@@ -43,31 +60,31 @@ enum AngularProgressButtonStylesReferencePool implements ReferencePool
 			this.cssReference.setPriority(RequirementsPriority.DontCare);
 		}
 	}
-	
-	@Override
-	public JavascriptReference getJavaScriptReference()
-	{
-		return javaScriptReference;
-	}
-	
-	@Override
-	public void setJavaScriptReference(JavascriptReference javaScriptReference)
-	{
-		this.javaScriptReference = javaScriptReference;
-	}
-	
+
 	@Override
 	public CSSReference getCssReference()
 	{
 		return cssReference;
 	}
-	
+
 	@Override
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
 	}
-	
+
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
+	}
+
 	/**
 	 * Returns the name or the data contained within
 	 *

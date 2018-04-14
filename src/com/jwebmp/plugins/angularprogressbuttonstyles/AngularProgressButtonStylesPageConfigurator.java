@@ -1,10 +1,27 @@
-package za.co.mmagon.jwebswing.plugins.angularprogressbuttonstyles;
+/*
+ * Copyright (C) 2017 Marc Magon
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
+package com.jwebmp.plugins.angularprogressbuttonstyles;
+
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.base.angular.AngularPageConfigurator;
+import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.plugins.jquery.JQueryPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -22,8 +39,8 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://lugovsky.github.io/angular-progress-button-styles/example.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularProgressButtonStyles.jar/download"
-) class AngularProgressButtonStylesPageConfigurator extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularProgressButtonStyles.jar/download") class AngularProgressButtonStylesPageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -43,8 +60,11 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		{
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
-			page.getBody().addJavaScriptReference(AngularProgressButtonStylesReferencePool.AngularProgressButtonStyles.getJavaScriptReference());
-			page.getAngular().getAngularModules().add(new AngularProgressButtonStylesModule());
+			page.getBody()
+			    .addJavaScriptReference(AngularProgressButtonStylesReferencePool.AngularProgressButtonStyles.getJavaScriptReference());
+			page.getAngular()
+			    .getAngularModules()
+			    .add(new AngularProgressButtonStylesModule());
 		}
 		return page;
 	}

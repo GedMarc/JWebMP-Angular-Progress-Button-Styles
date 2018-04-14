@@ -1,8 +1,6 @@
-package za.co.mmagon.jwebswing.plugins.angularprogressbuttonstyles;
+package com.jwebmp.plugins.angularprogressbuttonstyles;
 
-import za.co.mmagon.jwebswing.utilities.StaticStrings;
-
-import static za.co.mmagon.jwebswing.utilities.StaticStrings.CHAR_DASH;
+import com.jwebmp.utilities.StaticStrings;
 
 /**
  * Defines button appearance. Default value is fill.
@@ -55,7 +53,8 @@ public enum ProgressButtonAvailableStyles
 		}
 		else
 		{
-			return name().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, CHAR_DASH);
+			return name().toLowerCase()
+			             .replace(StaticStrings.CHAR_UNDERSCORE, StaticStrings.CHAR_DASH);
 		}
 	}
 }
