@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.angularprogressbuttonstyles;
 
-import com.jwebmp.BaseTestClass;
+import com.jwebmp.Page;
 import com.jwebmp.base.ajax.AjaxCall;
 import com.jwebmp.base.ajax.AjaxResponse;
 import com.jwebmp.events.click.ClickAdapter;
@@ -28,7 +28,7 @@ import org.junit.jupiter.api.Test;
  * @author Marc Magon
  */
 public class ProgressButtonStyleTest
-		extends BaseTestClass
+
 {
 
 	public ProgressButtonStyleTest()
@@ -38,7 +38,7 @@ public class ProgressButtonStyleTest
 	@Test
 	public void testSetStyle()
 	{
-		ProgressButtonStyle pbs = new ProgressButtonStyle(new ClickAdapter(getPage().getBody())
+		ProgressButtonStyle pbs = new ProgressButtonStyle(new ClickAdapter(new Page().getBody())
 		{
 			@Override
 			public void onClick(AjaxCall call, AjaxResponse response)
@@ -53,7 +53,7 @@ public class ProgressButtonStyleTest
 	@Test
 	public void testSetDirection()
 	{
-		ProgressButtonStyle pbs = new ProgressButtonStyle(new ClickAdapter(getPage().getBody())
+		ProgressButtonStyle pbs = new ProgressButtonStyle(new ClickAdapter(new Page().getBody())
 		{
 			@Override
 			public void onClick(AjaxCall call, AjaxResponse response)
