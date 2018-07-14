@@ -28,10 +28,12 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum AngularProgressButtonStylesReferencePool implements ReferencePool
+enum AngularProgressButtonStylesReferencePool
+		implements ReferencePool
 {
-	AngularProgressButtonStyles(new JavascriptReference("AngularProgressButtonStyles", 1.6, "bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.js"),
-	                            new CSSReference("AngularProgressButtonStyles", 1.6, "bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.css"));
+	AngularProgressButtonStyles(
+			new JavascriptReference("AngularProgressButtonStyles", 1.6, "bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.js"),
+			new CSSReference("AngularProgressButtonStyles", 1.6, "bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.css"));
 	/**
 	 * Any sub data
 	 */
