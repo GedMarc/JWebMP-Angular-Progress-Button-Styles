@@ -17,10 +17,10 @@
 
 package com.jwebmp.plugins.angularprogressbuttonstyles;
 
-import com.jwebmp.Event;
-import com.jwebmp.base.html.Button;
-import com.jwebmp.generics.Direction;
-import com.jwebmp.utilities.StaticStrings;
+import com.jwebmp.core.Event;
+import com.jwebmp.core.base.html.Button;
+import com.jwebmp.core.generics.Direction;
+import com.jwebmp.core.utilities.StaticStrings;
 
 /**
  * Progress button style

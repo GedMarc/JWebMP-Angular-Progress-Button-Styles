@@ -1,6 +1,6 @@
 package com.jwebmp.plugins.angularprogressbuttonstyles;
 
-import com.jwebmp.utilities.StaticStrings;
+import com.jwebmp.core.utilities.StaticStrings;
 
 /**
  * Defines button appearance. Default value is fill.

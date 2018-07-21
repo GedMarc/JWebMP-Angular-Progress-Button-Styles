@@ -17,11 +17,11 @@
 
 package com.jwebmp.plugins.angularprogressbuttonstyles;
 
-import com.jwebmp.Page;
-import com.jwebmp.base.ajax.AjaxCall;
-import com.jwebmp.base.ajax.AjaxResponse;
-import com.jwebmp.events.click.ClickAdapter;
-import com.jwebmp.generics.Direction;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.base.ajax.AjaxCall;
+import com.jwebmp.core.base.ajax.AjaxResponse;
+import com.jwebmp.core.events.click.ClickAdapter;
+import com.jwebmp.core.generics.Direction;
 import org.junit.jupiter.api.Test;
 
 /**
