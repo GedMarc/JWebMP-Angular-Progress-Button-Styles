@@ -18,10 +18,10 @@
 package com.jwebmp.plugins.angularprogressbuttonstyles;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -39,12 +39,10 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://lugovsky.github.io/angular-progress-button-styles/example.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularProgressButtonStyles.jar/download") class AngularProgressButtonStylesPageConfigurator
-		extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularProgressButtonStyles.jar/download")
+public class AngularProgressButtonStylesPageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * Constructs a new AngularProgressButtonStylesPageConfigurator
 	 */
@@ -62,9 +60,6 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 			AngularPageConfigurator.setRequired(true);
 			page.getBody()
 			    .addJavaScriptReference(AngularProgressButtonStylesReferencePool.AngularProgressButtonStyles.getJavaScriptReference());
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new AngularProgressButtonStylesModule());
 		}
 		return page;
 	}
