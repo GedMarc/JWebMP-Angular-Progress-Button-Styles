@@ -11,4 +11,5 @@ module com.jwebmp.plugins.angularprogressbuttonstyles {
 	provides IPageConfigurator with AngularProgressButtonStylesPageConfigurator;
 	provides IAngularModule with AngularProgressButtonStylesModule;
 
+	opens com.jwebmp.plugins.angularprogressbuttonstyles to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
