@@ -7,6 +7,7 @@ module com.jwebmp.plugins.angularprogressbuttonstyles {
 	exports com.jwebmp.plugins.angularprogressbuttonstyles;
 
 	requires com.jwebmp.core;
+	requires java.validation;
 
 	provides IPageConfigurator with AngularProgressButtonStylesPageConfigurator;
 	provides IAngularModule with AngularProgressButtonStylesModule;
