@@ -36,14 +36,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "angular,animations, ui,web ui, framework",
 		pluginSubtitle = "hese animation hooks are set in place to trigger animations during the life cycle of various directives ",
 		pluginSourceUrl = "https://github.com/akveo/angular-progress-button-styles",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-Progress-Button-Styles/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-Progress-Button-Styles",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-Progress-Button-Styles/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-Progress-Button-Styles",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://lugovsky.github.io/angular-progress-button-styles/example.html",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularProgressButtonStyles.jar/download")
 public class AngularProgressButtonStylesPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularProgressButtonStylesPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
