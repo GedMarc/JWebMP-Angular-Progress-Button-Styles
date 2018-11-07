@@ -30,8 +30,6 @@ public class AngularProgressButtonStylesModule
 		extends AngularModuleBase
 		implements IAngularModule<AngularProgressButtonStylesModule>
 {
-
-
 	/*
 	 * Constructs a new AngularProgressButtonStylesModule
 	 */
@@ -44,5 +42,16 @@ public class AngularProgressButtonStylesModule
 	public String renderFunction()
 	{
 		return null;
+	}
+
+	/**
+	 * If this page configurator is enabled
+	 *
+	 * @return if the configuration must run
+	 */
+	@Override
+	public boolean enabled()
+	{
+		return AngularProgressButtonStylesPageConfigurator.isEnabled();
 	}
 }
