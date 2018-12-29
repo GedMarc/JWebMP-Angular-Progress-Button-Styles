@@ -18,7 +18,6 @@
 package com.jwebmp.plugins.angularprogressbuttonstyles;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
-import com.jwebmp.core.base.angular.services.IAngularModule;
 
 /**
  * The module getting loaded into angular
@@ -27,8 +26,7 @@ import com.jwebmp.core.base.angular.services.IAngularModule;
  * @since 08 Jun 2017
  */
 public class AngularProgressButtonStylesModule
-		extends AngularModuleBase
-		implements IAngularModule<AngularProgressButtonStylesModule>
+		extends AngularModuleBase<AngularProgressButtonStylesModule>
 {
 	/*
 	 * Constructs a new AngularProgressButtonStylesModule
