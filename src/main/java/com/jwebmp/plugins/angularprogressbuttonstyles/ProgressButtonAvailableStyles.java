@@ -5,7 +5,7 @@ import com.jwebmp.core.utilities.StaticStrings;
 /**
  * Defines button appearance. Default value is fill.
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 11 Jun 2017
  */
 public enum ProgressButtonAvailableStyles
