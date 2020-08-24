@@ -2,6 +2,9 @@ package com.jwebmp.plugins.angularprogressbuttonstyles;
 
 import com.jwebmp.core.utilities.StaticStrings;
 
+import static com.guicedee.guicedinjection.json.StaticStrings.CHAR_DASH;
+import static com.guicedee.guicedinjection.json.StaticStrings.CHAR_UNDERSCORE;
+
 /**
  * Defines button appearance. Default value is fill.
  *
@@ -54,7 +57,7 @@ public enum ProgressButtonAvailableStyles
 		else
 		{
 			return name().toLowerCase()
-			             .replace(StaticStrings.CHAR_UNDERSCORE, StaticStrings.CHAR_DASH);
+			             .replace(CHAR_UNDERSCORE, CHAR_DASH);
 		}
 	}
 }

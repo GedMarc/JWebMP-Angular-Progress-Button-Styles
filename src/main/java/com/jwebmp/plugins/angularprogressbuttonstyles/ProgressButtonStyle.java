@@ -22,6 +22,8 @@ import com.jwebmp.core.base.html.Button;
 import com.jwebmp.core.generics.Direction;
 import com.jwebmp.core.utilities.StaticStrings;
 
+import static com.guicedee.guicedinjection.json.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+
 /**
  * Progress button style
  *
@@ -40,7 +42,7 @@ public class ProgressButtonStyle
 	public ProgressButtonStyle(Event eventToPerform)
 	{
 		addEvent(eventToPerform);
-		addAttribute("progress-button", StaticStrings.STRING_ANGULAR_EVENT_START_SHORT + eventToPerform.renderVariables() + StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON);
+		addAttribute("progress-button", StaticStrings.STRING_ANGULAR_EVENT_START_SHORT + eventToPerform.renderVariables() + STRING_CLOSING_BRACKET_SEMICOLON);
 
 	}
 
