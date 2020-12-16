@@ -31,7 +31,7 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "Angular Progress Button Styles",
 		pluginDescription = "A set of flat and 3D progress button styles where the button itself serves as a progress indicator. 3D styles are used for showing the progress indication on one side of the button while rotating the button in perspective.",
-		pluginUniqueName = "jwebswing-angular-animate",
+		pluginUniqueName = "jwebmp-angular-progress-button-styles",
 		pluginVersion = "1.6.4",
 		pluginCategories = "angular,animations, ui,web ui, framework",
 		pluginSubtitle = "hese animation hooks are set in place to trigger animations during the life cycle of various directives ",
@@ -41,7 +41,11 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://lugovsky.github.io/angular-progress-button-styles/example.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularProgressButtonStyles.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.angular/jwebmp-angular-progress-button-styles",
+		pluginModuleName = "com.jwebmp.plugins.angularprogressbuttonstyles",
+		pluginGroupId = "com.jwebmp.plugins.angular",
+		pluginArtifactId = "jwebmp-angular-progress-button-styles"
+)
 public class AngularProgressButtonStylesPageConfigurator
 		implements IPageConfigurator<AngularProgressButtonStylesPageConfigurator>
 {

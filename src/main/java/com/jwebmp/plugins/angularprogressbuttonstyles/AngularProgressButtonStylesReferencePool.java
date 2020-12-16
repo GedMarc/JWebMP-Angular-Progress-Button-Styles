@@ -32,8 +32,8 @@ enum AngularProgressButtonStylesReferencePool
 		implements ReferencePool
 {
 	AngularProgressButtonStyles(
-			new JavascriptReference("AngularProgressButtonStyles", 1.6, "bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.js"),
-			new CSSReference("AngularProgressButtonStyles", 1.6, "bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.css"));
+			new JavascriptReference("AngularProgressButtonStyles", 1.64, "bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.js"),
+			new CSSReference("AngularProgressButtonStyles", 1.64, "bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.css"));
 	/**
 	 * Any sub data
 	 */

@@ -19,6 +19,10 @@ package com.jwebmp.plugins.angularprogressbuttonstyles;
 
 import com.jwebmp.core.Event;
 import com.jwebmp.core.base.html.Button;
+import com.jwebmp.core.base.html.attributes.NoAttributes;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.base.html.interfaces.events.GlobalEvents;
 import com.jwebmp.core.generics.Direction;
 import com.jwebmp.core.utilities.StaticStrings;
 
@@ -31,15 +35,12 @@ import static com.guicedee.guicedinjection.json.StaticStrings.STRING_CLOSING_BRA
  * @since 10 Jun 2017
  */
 public class ProgressButtonStyle
-		extends Button
+		extends Button<GlobalChildren, NoAttributes, GlobalFeatures, GlobalEvents,ProgressButtonStyle>
 {
-
-
 	/*
 	 * Constructs a new ProgressButtonStyle
 	 */
-	@SuppressWarnings("unchecked")
-	public ProgressButtonStyle(Event eventToPerform)
+	public ProgressButtonStyle(Event<?,?> eventToPerform)
 	{
 		addEvent(eventToPerform);
 		addAttribute("progress-button", StaticStrings.STRING_ANGULAR_EVENT_START_SHORT + eventToPerform.renderVariables() + STRING_CLOSING_BRACKET_SEMICOLON);

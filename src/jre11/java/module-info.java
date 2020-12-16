@@ -1,3 +1,5 @@
+import com.jwebmp.plugins.angularprogressbuttonstyles.implementations.AngularProgressButtonStylesModuleInclusions;
+
 module com.jwebmp.plugins.angularprogressbuttonstyles {
 	exports com.jwebmp.plugins.angularprogressbuttonstyles;
 
@@ -10,6 +12,7 @@ module com.jwebmp.plugins.angularprogressbuttonstyles {
 	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularprogressbuttonstyles.AngularProgressButtonStylesModule;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularprogressbuttonstyles.implementations.AngularProgressStyleButtonsExclusionsModule;
+	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions with AngularProgressButtonStylesModuleInclusions;
 
 	opens com.jwebmp.plugins.angularprogressbuttonstyles to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
