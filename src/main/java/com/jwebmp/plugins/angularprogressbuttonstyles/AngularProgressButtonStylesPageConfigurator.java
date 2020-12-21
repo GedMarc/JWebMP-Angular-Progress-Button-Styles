@@ -29,9 +29,9 @@ import jakarta.validation.constraints.NotNull;
  * @author GedMarc
  * @since 08 Jun 2017
  */
-@PluginInformation(pluginName = "Angular Progress Button Styles",
+@PluginInformation(pluginName = "Progress Button Styles",
 		pluginDescription = "A set of flat and 3D progress button styles where the button itself serves as a progress indicator. 3D styles are used for showing the progress indication on one side of the button while rotating the button in perspective.",
-		pluginUniqueName = "jwebmp-angular-progress-button-styles",
+		pluginUniqueName = "angular-progress-button-styles",
 		pluginVersion = "1.6.4",
 		pluginCategories = "angular,animations, ui,web ui, framework",
 		pluginSubtitle = "hese animation hooks are set in place to trigger animations during the life cycle of various directives ",
