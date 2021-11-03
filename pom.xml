@@ -12,7 +12,7 @@
 
     <artifactId>jwebmp-angular-progress-button-styles</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>Angular Progress Button Styles</name>
     <description>The JWebSwing implementation for Angular Progress Button Styles</description>
     <url>https://github.com/GedMarc/Angular-Progress-Button-Styles</url>
